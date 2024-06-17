@@ -3,4 +3,4 @@ project(sistem_prezervacije_kulturnog_nasljedja2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(sistem_prezervacije_kulturnog_nasljedja2 main.cpp Artefakt.cpp Artefakt.h)
+add_executable(sistem_prezervacije_kulturnog_nasljedja2 main.cpp Artefakt.cpp Artefakt.h HistorijskiDogadjaj.cpp HistorijskiDogadjaj.h)

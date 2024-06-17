@@ -4,5 +4,7 @@
 
 #include "Artefakt.h"
 
-Artefakt::Artefakt(int id, int godina, string& ime, string& opis, string& lokacija, ArtefaktTip tip)
-            : id(id), godina(godina), ime(ime), opis(opis), lokacija(lokacija), tip(tip) {}
+ostream& operator<<(ostream& os, const Artefakt& artefakt) {
+    os << "ID: " << artefakt.id << "\nGodina: " << artefakt.godina << "\nIme: " << artefakt.ime << "\nOpis: " << artefakt.opis << "\nLokacija: " << artefakt.lokacija << "\nTip: " << static_cast<int>(artefakt.tip) << endl;
+    return os;
+}
